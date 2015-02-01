@@ -33,16 +33,19 @@
 		<p class=MsoNormal><span lang=EN-US>A simple way to accomplish on-the-fly
 		ETL(Extracting, ,Transformation, Loading). Morphlines is a Java library for
 		doing ETL on-the-fly, and it's an excellent companion to Flume. </span></p>
+
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US
 		style='mso-no-proof:yes'><img width=695 height=378
 		src="http://blogfiles.naver.net/20150201_232/drivesol_1422780784472s1chN_PNG/ex5_01.png"
 		v:shapes="Picture_x0020_8"></span></p>
+
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US>&lt;
 		Flume &amp; Molphline &gt;</span></p>
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US
 		style='mso-no-proof:yes'><img width=448 height=390
 		src="http://blogfiles.naver.net/20150201_298/drivesol_14227807848749vF6y_PNG/ex5_02.png"
 		v:shapes="_x0000_i1035"></span></p>
+
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US>&lt;Flume<span
 		style='mso-spacerun:yes'>&nbsp; </span>&amp; Solr&gt;</span></p>
 		<p class=MsoNormal><i><span lang=EN-US>Explore Log Events Interactively</span></i></p>
@@ -62,8 +65,9 @@
 		which may look something like this : </span></p>
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US
 		style='mso-no-proof:yes'><img width=692 height=298
-		src="clip_image006.jpg"
+		src="http://blogfiles.naver.net/20150201_138/drivesol_1422780785368yy1Tt_PNG/ex5_03.png"
 		v:shapes="_x0000_i1034"></span></p>
+
 		<p class=MsoNormal><b><span lang=EN-US>Solr</span></b><span lang=EN-US>
 		organizes data similarly to the way a SQL database does. <br>
 		Each record is called a 'document' and consists of fields defined by the schema
@@ -72,18 +76,21 @@
 		'collection' of documents.</span></p>
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US
 		style='mso-no-proof:yes'><img width=431 height=70
-		src="clip_image008.png"
+		src="http://blogfiles.naver.net/20150201_242/drivesol_14227807856172LaEp_PNG/ex5_04.png"
 		v:shapes="Picture_x0020_9"></span></p>
+
 		<p class=MsoNormal><span lang=EN-US>The difference is that data in Solr tends
 		to be more loosely structured. <br>
 		<u>Fields</u> may be optional, and instead of always matching exact values, <br>
 		you can also enter text queries that partially match a field, just like you're
 		searching for web pages. </span></p>
+
 		<p class=MsoNormal><span lang=EN-US>You'll also see Hue refer to <u><span
 		style='color:black;mso-themecolor:text1'>'shards'</span></u><span
 		style='color:black;mso-themecolor:text1'> </span>- and that's just the way Solr
 		breaks collections up to spread them around the cluster so you can search all
 		your data in parallel.</span></p>
+
 		<p class=MsoNormal><span lang=EN-US>Here is how you can start <u>real-time-indexing</u>
 		via <b><span style='color:#0070C0'>Cloudera Searc</span></b><b
 		style='mso-bidi-font-weight:normal'><span style='color:#0070C0'>h</span></b><span
@@ -95,7 +102,7 @@
 		search schema, there are four steps: </span></p>
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US
 		style='mso-no-proof:yes'><img width=689 height=320
-		src="clip_image010.png"
+		src="http://blogfiles.naver.net/20150201_159/drivesol_1422780785873IQdPU_PNG/ex5_05.png"
 		v:shapes="Picture_x0020_6"></span></p>
 		<ol style='margin-top:0cm' start=1 type=1>
 		    <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b><span
@@ -165,26 +172,30 @@
 		the top menu.</span></p>
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US
 		style='mso-no-proof:yes'><img border=0 width=692 height=352
-		src="clip_image012.png"
+		src="http://blogfiles.naver.net/20150201_200/drivesol_1422780786282A7sXk_PNG/ex5_06.png"
 		v:shapes="그림_x0020_1"></span></p>
+
 		<p class=MsoNormal><span lang=EN-US>Then click on <b>Indexes</b> from the top
 		right to see all of the indexes/collections.</span></p>
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US
 		style='mso-no-proof:yes'><img border=0 width=692 height=394
-		src="clip_image014.png"
+		src="http://blogfiles.naver.net/20150201_45/drivesol_1422780786533O9cFT_PNG/ex5_07.png"
 		v:shapes="그림_x0020_3"></span></p>
+
 		<p class=MsoNormal><span lang=EN-US>Now you can see the collection that we just
 		created, <b>live_logs</b>, click on it. </span></p>
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US
 		style='mso-no-proof:yes'><img border=0 width=701 height=258
-		src="clip_image016.png"
+		src="http://blogfiles.naver.net/20150201_24/drivesol_1422780789882QSTUH_PNG/ex5_08.png"
 		v:shapes="그림_x0020_14"></span></p>
+
 		<p class=MsoNormal><span lang=EN-US>You are now viewing the fields that we
 		defined in our schema.xml file</span></p>
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US
 		style='mso-no-proof:yes'><img border=0 width=700 height=518
-		src="clip_image018.jpg"
+		src="http://blogfiles.naver.net/20150201_47/drivesol_1422780790146wJNEP_PNG/ex5_09.png"
 		v:shapes="Picture_x0020_3"></span></p>
+		
 		<p class=MsoNormal><span lang=EN-US>Now that you have verified that your search
 		collection/index was created successfully, </span></p>
 		<p class=MsoNormal><span lang=EN-US><span
@@ -225,7 +236,7 @@
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US>You
 		can see like this results.</span></p>
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US><span style='mso-no-proof:yes'> <img border=0 width=698 height=598
-		src="clip_image020.jpg"
+		src="http://blogfiles.naver.net/20150201_62/drivesol_1422780790361i9gef_PNG/ex5_10.png"
 		v:shapes="Picture_x0020_4"></span></span></p>
 		<p class=MsoNormal style='text-align:left'>&nbsp;</p>
 		<p class=MsoNormal><b><span lang=EN-US>Flume and the morphline</span></b></p>
@@ -267,13 +278,13 @@
 		collection's page: </span></p>
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US
 		style='mso-no-proof:yes'><img border=0 width=701 height=365
-		src="clip_image022.jpg"
+		src="http://blogfiles.naver.net/20150201_54/drivesol_1422780790594XROvD_PNG/ex5_11.png"
 		v:shapes="Picture_x0020_7"></span></p>
 		<p class=MsoNormal><span lang=EN-US>You will be able to search, drill down
 		into, and browse the events that have been indexed. </span></p>
 		<p class=MsoNormal style='text-align:center'><span lang=EN-US
 		style='mso-no-proof:yes'><img border=0 width=700 height=225
-		src="clip_image024.jpg"
+		src="http://blogfiles.naver.net/20150201_121/drivesol_1422780790811ceB81_PNG/ex5_12.png"
 		v:shapes="Picture_x0020_5"></span></p>
 		<p class=MsoNormal><span lang=EN-US>If one of these steps fails, please reach
 		out to our <a
